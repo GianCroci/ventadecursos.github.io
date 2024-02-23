@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscripcion.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>.next</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">    
+               </datalist>
+           </form>
+           <div id="barras">
+            <i class="fa-solid fa-bars barras"  style="color: #000000;"></i>
+           </div>
+           <div class="carrito_container">
+            <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            <p class="contador">0</p>     
+       </div>
+       <div class="carrito_popup d-none">
+        <section class="carrito">
+            <h2 class="h2-carrito">Mi carrito</h2>
+            <table class="table" id="tabla">  
+                <p class="frase_a_borrar">Todavia no se seleccionaron cursos</p>
+            </table>
+            <p class="parrafo"></p>
+          </section>
+          <div class="boton_pagar_container">
+            <button class="boton_pagar d-none"><a href="inscripcion.html">PAGAR</a></button>
+          </div>
+        </div>
+        </nav>
+        <ul class="menu menu_responsive" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <h2>Ingrese sus datos</h2>
+        
+        <form method="get" action="#" class="formulario">
+            <div class="inputs">
+              <input type="text" name="nombre" class="nombre" placeholder="Nombre y Apellido" required>
+              <input type="number" name="dni" class="dni" placeholder="Dni" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="tel" name="telefono" class="telefono" placeholder="Telefono ej: 1165859429" required>
+              <button type="button" id="limpiar" onclick="limpiarCampo();">Limpiar</button>
+            </div>
+            <button type="button" name="agregar" class="agregar" onclick="nuevo();">Agregar</button>
+            <input type="submit" name="enviar" class="enviar"></input>
+          </form>
+          <p class="importe_final">$ </p>
+        <div class="mensaje"></div>
+          <section class="popup d-none">
+            <p name="datos">Se ha inscripto a la/las siguiente/s persona/s</p>
+            <p class="usuariosInscriptos"></p>
+            <p name="datos">A la brevedad le llegará un correo a su mail</p>
+          </section>
+        
+
+       
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/inscripcion.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>    
+    <script src="js/carritoInscripcion.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menuDesplegable.js"></script>
+</body>
+</html>

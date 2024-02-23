@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/detalle.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>.next</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">    
+               </datalist>
+           </form>
+           <div id="barras">
+            <i class="fa-solid fa-bars barras"  style="color: #000000;"></i>
+           </div>
+           <div class="carrito_container">
+            <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            <p class="contador">0</p>     
+       </div>
+       <div class="carrito_popup d-none">
+        <section class="carrito">
+            <h2 class="h2-carrito">Mi carrito</h2>
+            <table class="table" id="tabla">  
+                <p class="frase_a_borrar">Todavia no se seleccionaron cursos</p>
+            </table>
+            <p class="parrafo"></p>
+          </section>
+          <div class="boton_pagar_container">
+            <button class="boton_pagar d-none"><a href="inscripcion.html">PAGAR</a></button>
+          </div>
+        </div>
+        </nav>
+        <ul class="menu menu_responsive" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="detalle_container">
+            <img class="img_curso" src="img/sql.png" alt="">
+            <div class="descripcion_container">
+                <h2>SQL</h2>
+                <h3 class="inline">Valor: </h3><p class="inline"> $5000</p> <br>
+                <h3 class="inline">Tiempo de dedicación necesario: </h3><p class="inline"> 40hs</p>
+                <h3>Descripcion del curso:</h3><p class="descripcion"> enseña cómo gestionar bases de datos y manipular datos para análisis. 
+                    Los estudiantes aprenden a crear y mantener tablas, manipular datos con consultas SELECT, y utilizar JOINs y subconsultas. 
+                    Al final del curso, los estudiantes pueden crear y gestionar bases de datos y analizar datos con SQL.</p>
+                <h3>Requisitos previos:</h3><p> No son necesarios</p>
+                <button type="button" class="inscribirse" onclick="agregarAlCarritoSinActualizar({id:5, producto: 'Curso SQL', precio: 5000, src: 'img/sql.png', cantidad: 1})">Inscribirse</button>
+                <h2>CONTENIDOS POR CLASE</h2>
+                <section>
+                    <ul class="container">
+                        <li class="unidad">
+                            <h4>Unidad 1</h4>
+                            <ul class="temario">
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=9Ni-Eea8n48&pp=ygUMZWwgbWFlc3RydWxp" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=wM--SOjiU_A" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="unidad">
+                            <h4>Unidad 2</h4>
+                            <ul class="temario">
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="unidad">
+                            <h4>Unidad 3</h4>
+                            <ul class="temario">
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                                <li class="clase">
+                                    <i class="fa-regular fa-circle-play" style="color: #000000;"></i>
+                                    <p class="titulo_seccion">1283-1 Taller maquetado Body</p>
+                                    <i class="fa-regular fa-clock" style="color: #000000;"></i>
+                                    <p class="tiempo_seccion">10 min</p>
+                                    <a href="https://www.youtube.com/watch?v=vBe4Iaatwho&ab_channel=Roelcode" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>    
+                </section>
+            </div>
+        </section>
+        <div class="modal">
+            <div class="modal__header">
+              <a href="#" class="js-close-modal">X</a>
+            </div>
+            <p>
+              ¡FELICITACIONES! <br>
+              Adquiriste el curso de SQL <br>
+            </p>
+          
+          </div>
+        <section>
+            <h3 class="docente">DOCENTE</h3>
+            <div class="docente_container">
+                <img class="docente_img" src="img/docente.png" alt="">
+                <div>
+                    <h4 class="nombre_docente">WALTER BLANCO</h4>
+                    <img src="img/calificacion.png" alt="">
+                    <p>Como docente, mi objetivo es hacer que el aprendizaje de la programación sea accesible y ameno para todos 
+                        los estudiantes, independientemente de su nivel de experiencia previa. Me enfoco en enseñar los conceptos 
+                        fundamentales de manera clara y práctica, utilizando ejemplos concretos y ejercicios que permitan a los 
+                        estudiantes aplicar lo que aprenden.</p>
+                </div>
+            </div>
+        </section>
+        <h3 class="titulo_cursos_relacionados">CURSOS RELACIONADOS</h3>
+        <section class="cursos_relacionados">
+            <div class="img_curso_container">
+                <img src="img/python.jpg" alt="">
+                <p class="precio">$6000</p>
+                <p class="horas">55 HS</p>
+                <h3 class="nombre_curso">Python</h3>
+                <a class="ver_detalle" href="detalle-python.html">Ver detalle</a>
+                <button type="button"><a href="inscripcion.html">COMPRAR</a></button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/html.jpg" alt="">
+                <p class="precio">$4000</p>
+                <p class="horas">40 HS</p>
+                <h3 class="nombre_curso">HTML</h3>
+                <a class="ver_detalle" href="detalle-html.html">Ver detalle</a>
+                <button type="button"><a href="inscripcion.html">COMPRAR</a></button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/javascript.png" alt="">
+                <p class="precio">$6000</p>
+                <p class="horas">60 HS</p>
+                <h3 class="nombre_curso">JavaScript</h3>
+                <a class="ver_detalle" href="detalle-javascript.html">Ver detalle</a>
+                <button type="button"><a href="inscripcion.html">COMPRAR</a></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/carrito.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menuDesplegable.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/giftcard.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>.next</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="logo" src="img/logo.png" alt="">
+            <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+                <input class="buscador" type="search" name="cursos" list="cursos">
+                <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">    
+                </datalist>
+            </form>
+            <div id="barras">
+                <i class="fa-solid fa-bars barras"  style="color: #000000;"></i>
+               </div>
+            <div class="carrito_container">
+                <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <p class="contador">0</p>     
+           </div>
+           <div class="carrito_popup d-none">
+            <section class="carrito">
+                <h2 class="h2-carrito">Mi carrito</h2>
+                <table class="table" id="tabla">  
+                    <p class="frase_a_borrar">Todavia no se seleccionaron cursos</p>
+                </table>
+            <p class="parrafo"></p>
+          </section>
+          <div class="boton_pagar_container">
+            <button class="boton_pagar d-none"><a href="inscripcion.html">PAGAR</a></button>
+          </div>
+        </div>
+        </nav>
+        <ul class="menu menu_responsive" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+    <article>
+        <section class="giftCard_general">
+            <div class="container_texto_de_giftcard">
+                <div class="container_precio">
+                    <h2 class="valor_GiftCard">$000</h2>
+                </div>
+                <div class="texto_giftcard_container">
+                    <p class="giftCardPara">Gift Card para</p>
+                    <h2 class="destinatario_modificado">DESTINATARIO</h2>
+                </div>
+            </div>
+            <div class="vista_previa_container">
+                <p>VISTA PREVIA DEL RESULTADO</p>
+                <p>DE PERSONALIZACION</p>
+            </div>     
+        </section>
+        
+        <section class="formulario">
+            <form action="#" id="form"  autocomplete="off">
+    
+                <h3>NOMBRE DESTINATARIO</h3>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre">
+    
+                <h3>COLOR DE LETRAS</h3>
+    
+                <div class="color_letras">
+
+                <div class="colores_container">
+                <label for="color_negro" class= "circulo_negro"></label>
+                <input type="radio" name="Color" id="color_negro" value="negro" checked>
+                </div>
+
+        <div class="colores_container">
+        <label for="color_blanco" class="circulo_blanco"></label>
+        <input type="radio" name="Color" id="color_blanco" value="blanco">
+        </div>
+    
+        <div class="colores_container">
+        <label for="color_rojo" class="circulo_rojo"></label>
+        <input type="radio" name="Color" id="color_rojo" value="rojo">
+        </div>
+
+        <div class="colores_container">
+        <label for="color_azul" class="circulo_azul"></label>
+        <input type="radio" name="Color" id="color_azul" value="azul">
+        </div>
+
+    </div>
+    
+    <h3>TAMAÑO DE FUENTE</h3>
+
+    <div class="tamañoDeFuente">
+
+        <div class="tamaño_container">
+        <label for="tamañoDeFuente_28" class="tamañoDeFuente_28">28px</label>
+        <input type="radio" name="fuente" id="tamañoDeFuente_28" value="28px">
+        </div>
+    
+        <div class="tamaño_container">
+        <label for="tamañoDeFuente_36" class="tamañoDeFuente_36">36px</label>
+        <input type="radio" name="fuente" id="tamañoDeFuente_36" value="36px" checked>
+        </div>
+   
+        <div class="tamaño_container">
+        <label for="tamañoDeFuente_42" class="tamañoDeFuente_42">42px</label>
+        <input type="radio" name="fuente" id="tamañoDeFuente_42" value="42px"> 
+        </div>
+    
+    </div>
+
+    <h3>MONTO</h3>
+    <label for="monto"></label>
+    <input type="number" name="monto" id="monto">
+    
+    <h3>UBICACION</h3>
+    
+    <div class="ubicacion_general">
+
+        <div class="ubicacion_container">
+        <label for="Ubicacion_1" class="Ubicacion">
+            <div class="caja_negra1"></div>
+        </label>
+        <input type="radio" name="Ubicacion" id="Ubicacion_1" value="Arriba izquierda" checked>
+        </div>
+
+        <div class="ubicacion_container">
+        <label for="Ubicacion_2" class="Ubicacion">
+            <div class="caja_negra2"></div>
+        </label>
+        <input type="radio" name="Ubicacion" id="Ubicacion_2" value="Arriba derecha">
+        </div>
+
+        <div class="ubicacion_container">
+        <label for="Ubicacion_3" class="Ubicacion">
+            <div class="caja_negra3"></div>
+        </label>
+        <input type="radio" name="Ubicacion" id="Ubicacion_3" value="Abajo izquierda">
+        </div>
+
+        <div class="ubicacion_container">
+        <label for="Ubicacion_4" class="Ubicacion">
+            <div class="caja_negra4"></div>
+        </label>
+        <input type="radio" name="Ubicacion" id="Ubicacion_4" value="Abajo derecha">
+        </div>
+    
+    </div>
+
+    <h3>COLOR DE FONDO</h3>
+    
+    <div class="color_fondo">
+        <div class="fondo_container">
+             <label for="fondo_negro" class="fondo_negro"></label>
+            <input type="radio" name="fondo" id="fondo_negro" value="negro">
+        </div>
+        <div class="fondo_container">
+            <label for="fondo_blanco" class="fondo_blanco"></label>
+            <input type="radio" name="fondo" id="fondo_blanco" value="blanco">
+        </div>
+        <div class="fondo_container">
+            <label for="fondo_rojo" class="fondo_rojo"></label>
+            <input type="radio" name="fondo" id="fondo_rojo" value="rojo">
+        </div>
+        <div class="fondo_container">
+            <label for="fondo_azul" class="fondo_azul"></label>
+            <input type="radio" name="fondo" id="fondo_azul" value="azul">
+        </div>
+    
+    </div>
+    <input type="submit" value="CONFIRMAR">
+</form>
+<div id="mensaje" class="mensaje"></div>
+</section>
+<div class="modal">
+    <div class="modal__header">
+      
+    </div>
+    <p>
+      ¡FELICITACIONES! <br>
+      Adquiriste una gift card para <br>
+    </p>
+    <p class="nombre_giftcard"></p>
+  
+  </div>
+</main>
+    <script src="js/giftCard.js" ></script>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/carrito.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menuDesplegable.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+    <title>.next</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                   <option value="Html">
+                   <option value="JavaScript">
+                   <option value="CSS">
+                   <option value="Java">
+                   <option value="Python">
+                   <option value="Sql">    
+               </datalist>
+           </form>
+           <div id="barras">
+            <i class="fa-solid fa-bars barras"  style="color: #000000;"></i>
+           </div>
+           
+           
+           <div class="carrito_container">
+                <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                <p class="contador">0</p>     
+           </div>
+           <div class="carrito_popup d-none">
+            <section class="carrito">
+                <h2 class="h2-carrito">Mi carrito</h2>
+                <table class="table" id="tabla">  
+                    <p class="frase_a_borrar">Todavia no se seleccionaron cursos</p>
+                </table>
+                <p class="parrafo"></p>
+              </section>
+              <div class="boton_pagar_container ">
+                <button class="boton_pagar d-none"><a href="inscripcion.html">PAGAR</a></button>
+              </div>
+            </div>      
+        </nav>
+        <ul class="menu menu_responsive" id="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="giftcard.html">GIFT CARD</a></li>
+            <li><a href="inscripcion.html">INSCRIPCIÓN</a></li>
+            <li><a href="proximos-cursos.html">PROXIMOS CURSOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        
+    </header>
+    <main>
+        
+        <article class="slider">
+            <img src="img/banner_pagina_cursos_A_0.jpg" alt="">
+            <img src="img/banner_pagina_cursos_A_0.jpg" alt="">
+            <img src="img/banner_pagina_cursos_A_0.jpg" alt="">
+        </article>
+        <section class="pasos">
+            <img src="img/paso1.png" alt="">
+            <img src="img/paso2.png" alt="">
+            <img src="img/paso3.png" alt="">
+        </section>
+        <h3 class="titulo">CURSOS DESTACADOS</h3>
+        <section class="cursos_container">
+            <div class="img_curso_container">
+                <img src="img/css.jpg" alt="">
+                <p class="precio">$5000</p>
+                <p class="horas">50 HS</p>
+                <h3 class="nombre_curso">CSS</h3>
+                <a class="ver_detalle" href="detalle-css.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:1, producto: 'Curso CSS', precio: 5000, src: 'img/css.jpg', cantidad: 1})">COMPRAR</button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/html.jpg" alt="">
+                <p class="precio">$4000</p>
+                <p class="horas">40 HS</p>
+                <h3 class="nombre_curso">HTML</h3>
+                <a class="ver_detalle" href="detalle-html.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:2, producto: 'Curso HTML', precio: 4000, src: 'img/html.jpg', cantidad: 1})">COMPRAR</button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/javascript.png" alt="">
+                <p class="precio">$6000</p>
+                <p class="horas">60 HS</p>
+                <h3 class="nombre_curso">JavaScript</h3>
+                <a class="ver_detalle" href="detalle-javascript.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:3, producto: 'Curso JavaScript', precio: 6000, src: 'img/javascript.png', cantidad: 1})">COMPRAR</button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/python.jpg" alt="">
+                <p class="precio">$6000</p>
+                <p class="horas">55 HS</p>
+                <h3 class="nombre_curso">Python</h3>
+                <a class="ver_detalle" href="detalle-python.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:4, producto: 'Curso Python', precio: 6000, src: 'img/python.jpg', cantidad: 1})">COMPRAR</button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/sql.png" alt="">
+                <p class="precio">$5000</p>
+                <p class="horas">40 HS</p>
+                <h3 class="nombre_curso">SQL</h3>
+                <a class="ver_detalle" href="detalle-sql.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:5, producto: 'Curso SQL', precio: 5000, src: 'img/sql.png', cantidad: 1})">COMPRAR</button>
+            </div>
+            <div class="img_curso_container">
+                <img src="img/java.png" alt="">
+                <p class="precio">$4000</p>
+                <p class="horas">45 HS</p>
+                <h3 class="nombre_curso">JAVA</h3>
+                <a class="ver_detalle" href="detalle-java.html">Ver detalle</a>
+                <button type="button" class="boton_comprar" onclick="agregarAlCarrito({id:6, producto: 'Curso JAVA', precio: 4000, src: 'img/java.png', cantidad: 1})">COMPRAR</button>
+            </div>
+            
+                      
+           
+        </section>
+        <h3 class="medios_de_pago">MEDIOS DE PAGO</h3>
+        <section class="pagos_container">
+            <div></div>
+            <div class="img_medios">
+                <img src="img/visa.jpg" alt="">
+                <img src="img/mastercard.jpg" alt="">
+                <img src="img/naranja.png" alt="">
+                <img src="img/logo-mercadopago.jpg" alt="">
+            </div>
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/carrito.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menuDesplegable.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        });
+    </script>
+</body>
+</html>

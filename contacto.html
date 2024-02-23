@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/ad6343f94b.js" crossorigin="anonymous"></script>
+    <title>.next</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+           <img class="logo" src="img/logo.png" alt="">
+           <form class="buscador" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+               <input class="buscador" type="search" name="cursos" list="cursos">
+               <datalist id="cursos">
+                    <option value="Html">
+                    <option value="JavaScript">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Sql">   
+               </datalist>
+           </form>
+           <div id="barras">
+            <i class="fa-solid fa-bars barras"  style="color: #000000;"></i>
+           </div>
+           <div class="carrito_container">
+            <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            <p class="contador">0</p>     
+       </div>
+       <div class="carrito_popup d-none">
+        <section class="carrito">
+            <h2 class="h2-carrito">Mi carrito</h2>
+            <table class="table" id="tabla">  
+                <p class="frase_a_borrar">Todavia no se seleccionaron cursos</p>
+            </table>
+            <p class="parrafo"></p>
+          </section>
+          <div class="boton_pagar_container">
+            <button class="boton_pagar d-none"><a href="inscripcion.html">PAGAR</a></button>
+          </div>
+        </div>  
+        </nav>
+        <ul class="menu menu_responsive" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="giftcard.html">Gift Card</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="proximos-cursos.html">Proximos cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <main>
+        <form class="formulario_contacto" action="#" method="get" enctype="application/x-www-form-urlencoded " autocomplete="off" novalidate>
+         <h2 class="titulo_contacto">Contacto</h2>
+             <section class="datos_container">
+                <article class="datos_formulario">
+                    <label for="nombre"></label>
+                    <input type="text" name="Nombre" id="nombre" required placeholder="Nombre y apellido">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required placeholder="Usuario123@hotmail.com">                   
+                    <label for="numeroDeContacto"></label>
+                    <input type="number" name="numeroDeContacto" id="numeroDeContacto" placeholder="Ej: 1137684212" >
+                    <label for="descripcion"></label>
+                    <textarea class="caja_mensaje" name="Mensaje" id="descripcion" onkeyup="contarLetras()" cols="30" rows="10" placeholder="Mensaje"></textarea>                    
+                    <div class="contadorDeCaracteresContainer"><p class="contador_carac"></p></div>
+                    <input class="enviar_boton" type="submit" value="Enviar">
+                    
+                </article>
+                <div class="datos_contacto">
+                    <img src="img/datos-contacto.png" alt="">
+                </div>
+            </section>
+            <p class="popup d-none">Consulta enviada <br> A la brevedad nos pondremos en contacto</p>
+        </form>
+        <div class="mensaje" id="mensaje"></div>
+        <h2>UBICACION</h2>
+        <iframe class="ubicacion_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364159204989!2d-58.56538012449983!3d-34.67075757293039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1683165892990!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <script src="js/contacto.js"></script>
+    </main>
+    <footer>
+        <div class="datos_grupo">
+            <p>Attino Tomas - DNI 41399186</p>
+            <p>Croci Gian - DNI 40767286</p>
+        </div>
+        <ul class="menu_inferior">
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+            <li>Cancelacion de compra</li>
+            <li>Data fiscal</li>
+        </ul>
+        <ul class="redes_sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </footer>
+    <script src="js/contacto.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menuDesplegable.js"></script>
+</body>
+</html>
